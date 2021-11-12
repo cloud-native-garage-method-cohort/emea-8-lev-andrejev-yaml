@@ -4,11 +4,11 @@ kind: PipelineRun
 metadata:
   generateName: clone-lint-pipeline-run-
 spec:
-pipelineRef:
-  name: clone-lint-pipeline
-    workspaces:
+  pipelineRef:
+    name: clone-lint-pipeline
+  workspaces:
     - name: shared-workspace
-        volumeClaimTemplate:
+      volumeClaimTemplate:
         spec:
           resources:
             requests:
